@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Dibyasmita Hati
+N:Hati;Dibyasmita;;;
+TITLE:Full Stack Developer
+EMAIL;TYPE=INTERNET,PREF:dibyasmita1202@gmail.com
+TEL;TYPE=CELL:+918276876753
+ADR;TYPE=HOME:;;Kolkata;West Bengal;;India
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/dibyasmita-hati-54831b26b
+URL;TYPE=GitHub:https://github.com/dibyasmitahati
+END:VCARD

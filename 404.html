@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found — 404</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/styles/style.css" rel="stylesheet">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/#home"><span class="brand-mark">DH</span><span class="brand-text">Dibyasmita Hati</span></a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card" data-animate>
+        <h1><em>404</em> — Page not found</h1>
+        <p>The page you’re looking for doesn’t exist or has moved.</p>
+        <div class="actions" style="margin-top:12px">
+          <a class="btn primary" href="/#home">Back to Home</a>
+          <a class="btn" href="/#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Dibyasmita Hati</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('[data-animate]').forEach(el=>{ el.classList.add('in-view'); });
+  </script>
+</body>
+</html>
