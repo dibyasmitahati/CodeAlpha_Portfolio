@@ -1,3 +1,4 @@
+// Reveal-on-scroll, scrollspy, mobile nav, parallax, scroll progress, project filters
 (function(){
   // Reveal on scroll
   const revealer = new IntersectionObserver((entries)=>{
@@ -50,18 +51,6 @@
   };
   window.addEventListener('load', setInitialActive);
 
-  // Tone toggle with persistence
-  const toggle = document.getElementById('sepia-toggle');
-  if(localStorage.getItem('tone') === 'on'){ document.body.classList.add('sepia'); if(toggle) toggle.ariaPressed = "true"; }
-  if(toggle){
-    toggle.addEventListener('click', ()=>{
-      document.body.classList.toggle('sepia');
-      const on = document.body.classList.contains('sepia');
-      localStorage.setItem('tone', on ? 'on':'off');
-      toggle.setAttribute('aria-pressed', on ? 'true' : 'false');
-    });
-  }
-
   // Mobile nav
   const burger = document.getElementById('burger');
   const links = document.getElementById('nav-links');
@@ -73,7 +62,7 @@
     navLinks.forEach(a=>a.addEventListener('click', ()=>links.classList.remove('open')));
   }
 
-  // Subtle parallax on hero image card
+  // Subtle parallax on hero image frame
   const heroThumb = document.querySelector('.hero-thumb');
   if(heroThumb){
     window.addEventListener('scroll', ()=>{
@@ -104,7 +93,7 @@
     }
   }
 
-  // Projects filter (All / Web / Backend / UI)
+  // Projects filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.project');
   const grid = document.getElementById('project-grid');

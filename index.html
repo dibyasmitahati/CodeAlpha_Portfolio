@@ -56,7 +56,6 @@
         <a href="#projects">Projects</a>
         <a href="#faqs">FAQs</a>
         <a href="#contact">Contact</a>
-        <button id="sepia-toggle" class="btn small toggle" aria-pressed="false" title="Toggle tone">Tone</button>
       </nav>
     </div>
   </header>
@@ -66,29 +65,16 @@
     <section id="home" class="section hero">
       <div class="container hero-wrap">
         <div data-animate>
-          <div class="kicker">End-to-End Web, Engineered</div>
-          <h1><em>Dibyasmita Hati</em> — Full Stack Developer</h1>
+          <div class="kicker"><strong>End-to-End Web, Engineered</strong></div>
+          <h1>Dibyasmita Hati | Full Stack Developer</h1>
           <p class="lead">
             I build scalable, efficient applications that bridge polished UI with reliable backend systems for smooth, intuitive user experiences.
           </p>
-          <div class="actions">
+          <div class="actions equal">
             <a class="btn primary" href="#projects">View Projects</a>
             <button id="resume-btn" class="btn">
               <svg width="16" height="16" aria-hidden="true"><use href="#i-external"/></svg> Download Resume
             </button>
-          </div>
-
-          <!-- Social icons under resume -->
-          <div class="socials">
-            <a class="icon-btn" href="mailto:dibyasmita1202@gmail.com" aria-label="Email">
-              <svg width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg>
-            </a>
-            <a class="icon-btn" href="https://github.com/dibyasmitahati" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="20" height="20" aria-hidden="true"><use href="#i-github"/></svg>
-            </a>
-            <a class="icon-btn" href="https://www.linkedin.com/in/dibyasmita-hati-54831b26b" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="20" height="20" aria-hidden="true"><use href="#i-linkedin"/></svg>
-            </a>
           </div>
 
           <div class="badges">
@@ -99,10 +85,11 @@
         </div>
 
         <div class="card" data-animate>
-  <div class="thumb">
-    <img src="assets/images/dibyasmita.jpg" alt="Dibyasmita Hati" class="hero-photo">
-  </div>
-</div>
+          <div class="thumb hero-thumb">
+            <!-- Use your actual JPG path -->
+            <img src="assets/images/dibyasmita.jpg" alt="Dibyasmita Hati" class="hero-photo">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -112,7 +99,6 @@
         <div class="divider" aria-hidden="true"><span></span><svg width="22" height="22"><use href="#i-user"/></svg><span></span></div>
 
         <div class="grid cols-2 about-grid">
-          <!-- Unboxed main copy -->
           <div class="about-copy" data-animate>
             <h2><em>About</em> Me</h2>
             <p>
@@ -121,15 +107,12 @@
             <p>
               Beyond coding, I stay curious about design trends, UI/UX, and emerging technologies, continuously learning to create applications that are not only functional but also impactful.
             </p>
-
-            <!-- Feature blocks under About -->
-            <div class="highlights">
+            <div class="highlights center">
               <div class="mini-card"><strong>Clean code</strong></div>
-              <div class="mini-card"><strong>Aesthetic & modern UI/UX design</strong></div>
+              <div class="mini-card"><strong>Modern UI/UX design</strong></div>
             </div>
           </div>
 
-          <!-- Facts remain boxed -->
           <aside class="card about-aside" data-animate>
             <ul class="about-facts">
               <li><strong>Role:</strong> Full Stack Developer</li>
@@ -149,7 +132,6 @@
         <h2 data-animate><em>Skills</em></h2>
 
         <div class="grid cols-2">
-          <!-- Frontend Development -->
           <div class="card" data-animate>
             <div class="title"><h3>Frontend Development</h3></div>
             <div class="group-meter" aria-label="Frontend proficiency"><i style="width:90%"></i><span>90%</span></div>
@@ -163,7 +145,6 @@
             </div>
           </div>
 
-          <!-- Backend Development -->
           <div class="card" data-animate>
             <div class="title"><h3>Backend Development</h3></div>
             <div class="group-meter" aria-label="Backend proficiency"><i style="width:85%"></i><span>85%</span></div>
@@ -175,7 +156,6 @@
             </div>
           </div>
 
-          <!-- Languages -->
           <div class="card" data-animate>
             <div class="title"><h3>Languages</h3></div>
             <div class="group-meter" aria-label="Languages proficiency"><i style="width:80%"></i><span>80%</span></div>
@@ -187,7 +167,6 @@
             </div>
           </div>
 
-          <!-- Tools & Platforms -->
           <div class="card" data-animate>
             <div class="title"><h3>Tools & Platforms</h3></div>
             <div class="group-meter" aria-label="Tools proficiency"><i style="width:80%"></i><span>80%</span></div>
@@ -200,8 +179,7 @@
           </div>
         </div>
 
-        <!-- Stats under skills -->
-        <div class="stats grid cols-4" data-animate>
+        <div class="stats stats-2x2" data-animate>
           <div class="stat card"><div class="num">1+<small>yrs</small></div><div class="label">Experience</div></div>
           <div class="stat card"><div class="num">10+</div><div class="label">Projects</div></div>
           <div class="stat card"><div class="num">10+</div><div class="label">Technologies</div></div>
@@ -216,7 +194,6 @@
         <div class="divider" aria-hidden="true"><span></span><svg width="22" height="22"><use href="#i-folder"/></svg><span></span></div>
         <h2 data-animate><em>Featured</em> Projects</h2>
 
-        <!-- FILTER CONTROLS -->
         <div class="filters" role="tablist" aria-label="Project categories">
           <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
             <svg width="16" height="16" aria-hidden="true"><use href="#i-filter"/></svg> All
@@ -227,7 +204,6 @@
         </div>
 
         <div id="project-grid" class="grid cols-3">
-          <!-- 1 -->
           <article class="card project" data-tags="web ui" data-animate>
             <div class="thumb proj">
               <img src="assets/images/projects/gallery.png" alt="Art Galleria project screenshot" class="proj-img">
@@ -246,7 +222,6 @@
             </div>
           </article>
 
-          <!-- 2 -->
           <article class="card project" data-tags="backend web" data-animate>
             <div class="thumb proj">
               <img src="assets/images/projects/massmail.png" alt="Mass Mail Dispatcher dashboard" class="proj-img">
@@ -265,7 +240,6 @@
             </div>
           </article>
 
-          <!-- 3 -->
           <article class="card project" data-tags="backend web" data-animate>
             <div class="thumb proj">
               <img src="assets/images/projects/airline.png" alt="Airlines Management System interface" class="proj-img">
@@ -284,7 +258,6 @@
             </div>
           </article>
 
-          <!-- 4 -->
           <article class="card project" data-tags="web ui" data-animate>
             <div class="thumb proj">
               <img src="assets/images/projects/calculator.png" alt="Calculator app UI" class="proj-img">
@@ -304,8 +277,8 @@
           </article>
         </div>
 
-        <!-- Project CTA -->
-        <div class="cta-bar card" data-animate>
+        <!-- Project CTA (centered, tight) -->
+        <div class="cta-bar card center tight-gap" data-animate>
           <p class="cta-text">Interested in my work or have a project in mind?</p>
           <a class="btn primary" href="mailto:dibyasmita1202@gmail.com?subject=Project%20Inquiry%20from%20Portfolio&body=Hi%20Dibyasmita%2C%0A%0A">
             Get in touch
@@ -315,7 +288,7 @@
     </section>
 
     <!-- FAQs -->
-    <section id="faqs" class="section faq">
+    <section id="faqs" class="section faq compact">
       <div class="container">
         <div class="divider" aria-hidden="true"><span></span><svg width="22" height="22"><use href="#i-help"/></svg><span></span></div>
         <h2 data-animate><em>FAQs</em></h2>
@@ -329,26 +302,30 @@
         </details>
         <details data-animate>
           <summary>How can I collaborate with you?</summary>
-          <p>Reach me via the contact form below or connect on LinkedIn.</p>
+          <p>Reach me via the contact details below or connect on LinkedIn.</p>
         </details>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
+    <!-- PRE-CONTACT (between FAQs and Contact, same compact gap) -->
+    <section class="section compact">
       <div class="container">
-
-        <!-- Pre-contact intro block -->
-        <div class="card pre-contact" data-animate>
+        <div class="card pre-contact center" data-animate>
           <h3>Let’s Build Together</h3>
           <p>Let’s team up and turn your vision into something extraordinary. I’m always excited to explore new ideas and create impactful solutions.</p>
         </div>
+      </div>
+    </section>
 
+    <!-- CONTACT (info only) -->
+    <section id="contact" class="section contact compact">
+      <div class="container">
+        <div class="divider" aria-hidden="true"><span></span><svg width="22" height="22"><use href="#i-mail"/></svg><span></span></div>
         <h2 data-animate><em>Contact</em></h2>
-        <div class="card contact-card" data-animate>
-          <div class="contact-inner">
+        <div class="card contact-card center" data-animate>
+          <div class="contact-inner single">
             <div class="contact-info">
-              <ul class="contact-list">
+              <ul class="contact-list center-ul">
                 <li>
                   <svg width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>
                   <a href="mailto:dibyasmita1202@gmail.com">dibyasmita1202@gmail.com</a>
@@ -376,32 +353,6 @@
               </ul>
               <p class="small-note">Prefer email? I usually respond within 24–48 hours.</p>
             </div>
-
-            <!-- Netlify form with success redirect -->
-            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-              <input type="hidden" name="form-name" value="contact">
-              <p style="display:none"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
-
-              <div class="form-grid">
-                <label class="field">
-                  <span>Name</span>
-                  <input class="input" type="text" name="name" required />
-                </label>
-                <label class="field">
-                  <span>Email</span>
-                  <input class="input" type="email" name="email" required />
-                </label>
-              </div>
-
-              <label class="field">
-                <span>Message</span>
-                <textarea class="input" name="message" rows="5" required></textarea>
-              </label>
-
-              <button class="btn primary" type="submit">
-                <svg width="16" height="16" aria-hidden="true"><use href="#i-send"/></svg> Send Message
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -410,36 +361,32 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="container footer-inner">
-      <div class="footer-left">
-        © <span id="year"></span> Dibyasmita Hati
+    <div class="container footer-stack">
+      <!-- Line 1: icons -->
+      <div class="footer-line">
+        <a class="icon-btn sm" href="mailto:dibyasmita1202@gmail.com" aria-label="Email"><svg width="18" height="18"><use href="#i-mail"/></svg></a>
+        <a class="icon-btn sm" href="https://github.com/dibyasmitahati" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18"><use href="#i-github"/></svg></a>
+        <a class="icon-btn sm" href="https://www.linkedin.com/in/dibyasmita-hati-54831b26b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18"><use href="#i-linkedin"/></svg></a>
       </div>
-      <div class="footer-links">
+      <!-- Line 2: section links -->
+      <div class="footer-line footer-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-social">
-        <a class="icon-btn sm" href="mailto:dibyasmita1202@gmail.com" aria-label="Email"><svg width="18" height="18"><use href="#i-mail"/></svg></a>
-        <a class="icon-btn sm" href="https://github.com/dibyasmitahati" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18"><use href="#i-github"/></svg></a>
-        <a class="icon-btn sm" href="https://www.linkedin.com/in/dibyasmita-hati-54831b26b" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18"><use href="#i-linkedin"/></svg></a>
-      </div>
-      <div class="footer-right">
+      <!-- Line 3: © 2025 + name (no DH logo) -->
+      <div class="footer-line name">© 2025 Dibyasmita Hati</div>
+      <!-- Line 4: back to top -->
+      <div class="footer-line">
         <a class="btn small ghost" href="#home">Back to top</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Contact Button -->
-  <a href="#contact" class="fab" aria-label="Contact">
-    <svg width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg>
-  </a>
-
   <script src="scripts/main.js"></script>
   <script>
-    // year + resume availability (hero only)
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Resume availability (hero button)
     (function(){
       const path = 'assets/resume/Dibyasmita_Hati_Resume.pdf';
       const heroBtn = document.getElementById('resume-btn');
